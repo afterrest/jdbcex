@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id("io.freefair.lombok") version "8.0.1"
 }
 
 group 'org.zerock'
@@ -34,6 +35,10 @@ dependencies {
 
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.0'
+    implementation 'org.slf4j:slf4j-api:2.0.7'
+    implementation 'ch.qos.logback:logback-classic:1.4.7'
 }
 
 
