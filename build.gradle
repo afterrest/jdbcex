@@ -39,6 +39,10 @@ dependencies {
     implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.0'
     implementation 'org.slf4j:slf4j-api:2.0.7'
     implementation 'ch.qos.logback:logback-classic:1.4.7'
+
+    implementation 'org.modelmapper:modelmapper:3.0.0'
+
+    implementation 'javax.servlet:jstl:1.2'
 }
 
 
